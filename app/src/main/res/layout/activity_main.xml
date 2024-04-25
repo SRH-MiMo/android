@@ -1,19 +1,101 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<!-- Auto layout, variables, and unit scale are not yet supported -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="800dp"
+    android:background="#000000"
+    android:clipToOutline="true">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/start"
+        android:layout_width="235dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="80dp"
+        android:text="@string/start"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+    />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/mark"
+        android:layout_width="50dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/mark"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="123dp"
+        android:src="@drawable/moon" />
+
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_color"
+        android:text="시작하기"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="630dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/home"
+            android:layout_marginRight="65dp" />
+
+        <ImageView
+            android:id="@+id/bookmark"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/bookmark"
+            android:layout_marginRight="65dp"/>
+
+        <ImageView
+            android:id="@+id/kakao"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/kakao"
+            android:layout_marginRight="65dp"/>
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/seeting"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
+
