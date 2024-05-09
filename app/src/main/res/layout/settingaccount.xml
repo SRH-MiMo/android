@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrowleft"
+        android:layout_marginLeft="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="42dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="138dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="41dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="138dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="계정"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="124dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="계정 변경"
+        android:textColor="@color/white"
+        android:drawableStart="@drawable/customer"
+        android:gravity=""/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="211dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="로그아웃"
+        android:textColor="@color/white"
+        android:drawableStart="@drawable/logout"
+        android:gravity=""/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="계정 삭제"
+        android:layout_marginTop="282dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="152dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginRight="152dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#D11091"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
