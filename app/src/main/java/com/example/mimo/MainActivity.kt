@@ -20,13 +20,6 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
 
-            val markImageView: ImageView = findViewById(R.id.mark)
-
-            val homeImageView: ImageView = findViewById(R.id.home)
-
-            val homeImageView.setOnClickListener {
-                val intent = Intent(this, NextActivity::class.java)
-                startActivity(intent)
             }
         }
 

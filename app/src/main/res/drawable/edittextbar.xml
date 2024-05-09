@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="line"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <size
+        android:width="200dp"
+        android:height="50dp"/> <!-- height 값을 늘려서 선을 아래로 내립니다 -->
+    <stroke
+        android:width="3dp"
+        android:color="#AE00BD"/>
+
+</shape>
